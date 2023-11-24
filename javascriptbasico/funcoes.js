@@ -1,4 +1,4 @@
-//camelCase - EScrevemos uma declaração sem espaço, começando com minúsculo e alterando enter maiúsculo e minúsculo
+/*//camelCase - Escrevemos uma declaração sem espaço, começando com minúsculo e a colocando as palavras em maiúsculo 
 //ex: saudarUsuarioLogado
 
 
@@ -48,20 +48,21 @@ function corDoSemafaro(cor){
 
 console.log("Cor do semáro",corDoSemafaro("verde"));
 
-//array - lista
+//array - lista*/
 
 let frutas = ['maça', 'banana', 'uva', 'morango']
+console.log(frutas);
 
 //ADICIONANDO UM ITEM NA LISTA, USAMOS push();
 frutas.push("laranja");
 console.log(frutas);
 
-//ADICIONANDO UM ITEM NA LISTA AO INÍCIO, USAMOS unshifit();
-frutas.unshift("pera");
-console.log(frutas);
-
 //REMOVENDO UM ITEM NA LISTA, USAMOS pop();
 frutas.pop("pera");
+console.log(frutas);
+
+//ADICIONANDO UM ITEM NA LISTA AO INÍCIO, USAMOS unshifit();
+frutas.unshift("pera");
 console.log(frutas);
 
 //REMOVENDO UM ITEM NA LISTA NO INÍCIO, USAMOS shift();
@@ -96,8 +97,8 @@ if(!frutas.includes("uva")){
 
 function verificarAcesso(id){
     const idsAutorizados = [100,101,102,103,104,105];
-    if(idsAutorizados.includes(id)){
-        console.log("Acesso autorizado");
+    if(idsAutorizados.includes(id)) {
+        console.log("Acesso autorizado!");
     }else{
         console.log("Acesso negado!");
     }
