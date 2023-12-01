@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <style>
+    .temaLight{
+        background-color: rgb(10, 7, 7);
+        color: rgb(35, 230, 51);
+        box-shadow: 2px 2px 3px #a55151;
+        padding: 0.4rem;
+    }
+    .temaDark{
+        background-color: rgb(10, 7, 7);
+        color: rgb(35, 226, 230);
+        box-shadow: 2px 2px 3px #000;
+        padding: 0.4rem;
+    }
+  </style>
 </head>
 <body>
-    
-    <h1 id="tituloPrincipal">Este é o título</h1>
+
+    <h1 id="tituloPrincipal">Este é o título principal</h1>
+   
 
 <script>
     
-    let titulo = document.getElementById("tituloPrincipal")
+    let titulo = document.getElementById("tituloPrincipal");
+    let tema = true;
+    
+    if(tema === true){
+        titulo.classList.add("temaDark");
+        titulo.textContent = "Tema Dark Aplicado"
+        
+    }else{
+        titulo.classList.add("temaLight");
+        titulo.textContent = "Tema Light Aplicado"
+    }
+
+    
+
+
+
+    
+
 
 
 </script>

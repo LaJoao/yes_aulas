@@ -26,3 +26,4 @@ switch(cor){
     default:
         console.log("Cor desconhecida")
 }
+v

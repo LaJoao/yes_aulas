@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bodyDark{
+        background-image: url("https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg");
+        background-size: auto;
+        }
+        .temaDark{
+            background-color: rgb(10, 7, 7);
+            color: rgb(35, 226, 230);
+            box-shadow: 2px 2px 3px #000;
+            padding: 0.4rem;
+        }
+        .button{
+            background-color: rgb(136, 134, 10);
+            color: rgb(35, 226, 230);
+            box-shadow: 2px 2px 3px #a01313;
+            padding: 0.4rem;
+        }
+      </style>
+</head>
+<body>
+    
+    <h1 id="tituloPrincipal">Esse é o principal título</h1>
+    <button id="btnDark">Dark</button>
+    <button id="btnLigth">Light</button>
+    
+    <script>
+        
+        //APLICANDO TEMA DARK
+        function aplicarTemaEscuro(){
+        let titulo = document.getElementById("tituloPrincipal");
+        let fundo = document.body;
+        titulo.textContent = "Tema escuro aplicado no título"
+        fundo.classList.add("bodyDark")
+        titulo.classList.remove("temaLight")
+        titulo.classList.add("temaDark");
+        console.log("Tem Dark aplicado");
+    }
+
+    //APLICANDO TEMA LIGHT
+    function aplicarTemaClaro(){
+        let titulo = document.getElementById("tituloPrincipal");
+        titulo.textContent = "Tema claro aplicado no título"
+        fundo.classList.remove("bodyDark")
+        titulo.classList.remove("temaDark")
+        titulo.classList.add("temaLigth");
+        console.log("Tem Light aplicado");
+    }
+
+    document.getElementById("btnDark").onclick = aplicarTemaEscuro
+    document.getElementById("btnLigth").onclick = aplicarTemaClaro
+
+
+</script>
+</body>
+</html>
